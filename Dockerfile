@@ -17,7 +17,7 @@ COPY sources.list /etc/apt/
 RUN \
  apt-get update && \
  apt-get -y install --no-install-recommends software-properties-common && \
- add-apt-repository ppa:deluge-team/ppa && \
+ add-apt-repository ppa:deluge-team/stable && \
  apt-get update && \
  apt-get -y install --no-install-recommends deluged deluge-web deluge-console mediainfo libchromaprint-tools inotify-tools openjdk-8-jre-headless && \
  curl -L -O https://downloads.sourceforge.net/project/filebot/filebot/FileBot_${FILEBOT_VERSION}/${FILEBOT_PACKAGE} && \
